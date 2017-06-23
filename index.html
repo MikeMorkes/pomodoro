@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="clock">
+
+	<div id="title">Toe&#8209;may&#8209;toe, Toe&#8209;mah&#8209;toe</div>
+
+	<div id="set-timer-top">
+		<button id="minute-up" class="set-timer-up" onclick="addTime()">+1 MIN</button>
+	</div>
+
+	<div id="clockFace">
+		<span id="time">25:00</span>
+	</div>
+	
+	<div id="set-timer-bottom">
+		<button id="minute-down" class="set-timer-down" onclick="subtractTime()">-1 MIN</button>
+	</div>
+
+	<div id="controls">
+		<button id="start" onclick="startClock()">START</button>
+		<button id="stop" onclick="stopClock()">STOP</button>
+		<button id="reset" onclick="resetClock()">RESET</button>
+	</div>
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

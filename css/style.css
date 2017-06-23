@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700,900,900italic,700italic,400italic);
+
+input:focus,
+I select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+body {
+	background: #810000 url('http://www.mikemorkes.com/codepen/pomodoro/red_tomato.jpg') no-repeat center top;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#title {
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 0;
+	text-shadow: 0 0 8px #000;
+	font-family: 'Lobster', cursive;
+}
+
+@media only screen and (max-width:480px) {
+	#message {
+		color: #fff;
+		font-size: 30px;
+		margin-bottom: 0;
+		text-shadow: 0 0 8px #000;
+		font-family: 'Lobster', cursive;
+	}
+}
+
+#clockFace {
+	color: #fff;
+	font-size: 100px;
+	margin-bottom: 0;
+	font-weight: 900;
+	text-shadow: 0 0 8px #000;
+}
+
+#set-timer-top {
+	margin: 40px 0 0;
+}
+
+#set-timer-bottom {
+	margin: 0 0 80px;
+}
+
+.set-timer-up {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+	/* IE6-9 */
+	border: none;
+	color: #000;
+	cursor: pointer;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 20px;
+	width: 300px;
+	color: #fff;
+	cursor: pointer;
+	padding: 15px 10px;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-weight: 900;
+	text-shadow: 0 0 8px #000;
+	animation-duration: .2s !important;	
+	-webkit-animation-duration: .2s !important;	
+}
+
+.set-timer-down {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100;White+to+Transparent */
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+	/* IE6-9 */
+	border: none;
+	color: #000;
+	cursor: pointer;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 20px;
+	width: 300px;
+	color: #fff;
+	cursor: pointer;
+	padding: 15px 10px;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-weight: 900;
+	text-shadow: 0 0 8px #000;
+	animation-duration: .25s !important;	
+	-webkit-animation-duration: .25s !important;
+}
+
+#controls button {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 15px 30px;
+	margin: -20px auto 0;
+	border-radius: 10px;
+	font-weight: 900;
+	font-size: 30px;
+	width: 300px;
+	text-shadow: 0 0 8px #000;
+}
+
+#start {
+	background: -webkit-linear-gradient(top, rgba(0, 127, 6, 1) 0%, rgba(0, 127, 6, 0.15) 100%);
+	background: linear-gradient(to bottom, rgba(0, 127, 6, 1) 0%, rgba(0, 127, 6, 0.15) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#007f06', endColorstr='#26007f06', GradientType=0);
+}
+
+#stop {
+	background: -webkit-linear-gradient(top, rgba(178, 0, 0, 1) 0%, rgba(178, 0, 0, 0.15) 100%);
+	background: linear-gradient(to bottom, rgba(178, 0, 0, 1) 0%, rgba(178, 0, 0, 0.15) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b20000', endColorstr='#26b20000', GradientType=0);
+}
+
+#reset {
+	background: -webkit-linear-gradient(top, rgba(234, 183, 0, 1) 0%, rgba(234, 183, 0, 0.15) 100%);
+	background: linear-gradient(to bottom, rgba(234, 183, 0, 1) 0%, rgba(234, 183, 0, 0.15) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eab700', endColorstr='#26eab700', GradientType=0);
+}
+
+#stop,
+#reset {
+	display: none;
+}
