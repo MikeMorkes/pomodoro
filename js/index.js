@@ -88,7 +88,7 @@ function startClock() {
   masterTimer(timeConversion, display);
 
 	// change background and title	
-	document.body.style.background = "#009631 url('http://www.mikemorkes.com/codepen/pomodoro/green_tomato.jpg') no-repeat center top";
+	document.body.style.background = "#009631 url('../pomodoro/img/green_tomato.jpg') no-repeat center top";
 	document.getElementById("title").innerHTML = "Get to work!";
 
 	// remove zoom class so we can reuse it later
@@ -108,7 +108,7 @@ function stopClock() {
 	clearInterval(countdown);
 
 	// change background and title
-	document.body.style.background = "#810000 url('http://www.mikemorkes.com/codepen/pomodoro/red_tomato.jpg') no-repeat center top";
+	document.body.style.background = "#810000 url('../pomodoro/img/red_tomato.jpg') no-repeat center top";
 	document.getElementById("title").innerHTML = "Well? We're waiting!";
 
 	// show reset button, hide stop button
@@ -125,7 +125,7 @@ function resetClock() {
 	document.getElementById("time").innerHTML = "25:00";
 
 	// change background	
-	document.body.style.background = "#810000 url('http://www.mikemorkes.com/codepen/pomodoro/red_tomato.jpg') no-repeat center top";
+	document.body.style.background = "#810000 url('../pomodoro/img/red_tomato.jpg') no-repeat center top";
 
 	// show start button, hide reset button
 	document.getElementById("start").style.display = "block";
@@ -139,7 +139,7 @@ function success() {
 		timeCalculationNum = 25;
 		
 		document.getElementById("title").innerHTML = "Take a break, you've earned it!";
-		document.body.style.background = "#0051ad url('http://www.mikemorkes.com/codepen/pomodoro/beach_bkgd.jpg') no-repeat center top";
+		document.body.style.background = "#0051ad url('../pomodoro/img/beach_bkgd.jpg') no-repeat center top";
 		document.getElementById("time").innerHTML = "00:00";
 
 		// show reset button, hide stop button
@@ -152,6 +152,6 @@ function success() {
 		});
 	
 		// Play audio
-		var audio = new Audio('http://www.mikemorkes.com/codepen/pomodoro/squish.mp3');
+		var audio = new Audio('../pomodoro/sounds/squish.mp3');
 		audio.play();	
 }
