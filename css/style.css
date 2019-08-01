@@ -8,7 +8,7 @@ button:focus {
 }
 
 body {
-	background: #810000 url('http://www.mikemorkes.com/codepen/pomodoro/red_tomato.jpg') no-repeat center top;
+	background: #810000 url('img/red_tomato.jpg') no-repeat center top;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	padding-top: 30px;
